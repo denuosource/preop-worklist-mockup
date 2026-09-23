@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Procedure Worklist — NovaNav</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/logo.png" alt="NovaNav" class="logo">
+  <nav class="topnav">
+    <a href="#" class="nav-link active" data-page="worklist">Worklist</a>
+    <a href="#" class="nav-link" data-page="impact">Measured Impact</a>
+  </nav>
+  <div class="topbar-right">
+    <button class="iconbtn" id="themeToggle" title="Toggle light / dark">&#9788;</button>
+    <div class="avatar">DW</div>
+  </div>
+</header>
+
+<!-- ── Worklist ──────────────────────────────────────────────────────── -->
+<main class="page" id="worklistPage">
+
+  <div class="page-head">
+    <div>
+      <h1 class="page-title">Pre-Procedure Worklist</h1>
+      <div class="page-org">Signed in as Dana Whitmore, Care Coordinator</div>
+    </div>
+    <div class="today">
+      <div class="today-label">Today</div>
+      <div class="today-date" id="todayDate"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="tabs">
+      <button class="tab t-d3 active" data-tab="D3">
+        D&minus;3 <span class="tab-note">Working list</span> <span class="tab-count" id="countD3">0</span>
+      </button>
+      <button class="tab t-d1" data-tab="D1">
+        D&minus;1 <span class="tab-note">Do today</span> <span class="tab-count" id="countD1">0</span>
+      </button>
+    </div>
+
+    <div class="band-filters">
+      <button class="band all active" data-risk="all">All</button>
+      <button class="band high" data-risk="red">High risk</button>
+      <button class="band med" data-risk="amber">Medium risk</button>
+      <button class="band low" data-risk="green">Low risk</button>
+    </div>
+
+    <span style="flex:1"></span>
+
+    <div class="multiselect" id="practiceSelect">
+      <button class="chip trigger" id="practiceTrigger">
+        <span id="practiceLabel">All surgeons</span> <span class="caret">&#9662;</span>
+      </button>
+      <div class="ms-panel" id="practicePanel"></div>
+    </div>
+  </div>
+
+  <div class="work-layout">
+    <aside class="rail" id="rail"></aside>
+
+    <div class="work-main">
+      <div class="barrier-strip" id="barrierStrip"></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:4%; text-align:center;">Risk</th>
+              <th style="width:16%;">Patient</th>
+              <th style="width:21%;">Procedure</th>
+              <th style="width:11%;">Procedure date</th>
+              <th style="width:13%;">Tasks</th>
+              <th style="width:25%;">Primary risk factor</th>
+              <th style="width:10%;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2026 NovaNav, Inc.</div>
+</main>
+
+<!-- ── Measured impact ───────────────────────────────────────────────── -->
+<main class="page" id="impactPage" style="display:none;">
+  <div class="page-head">
+    <div>
+      <h1 class="page-title">Measured Impact</h1>
+      <div class="page-org">Signed in as Dana Whitmore, Care Coordinator</div>
+    </div>
+    <div class="today">
+      <div class="today-label">Today</div>
+      <div class="today-date" id="todayDate2"></div>
+    </div>
+  </div>
+
+  <div class="kpis" id="impactHeadline"></div>
+
+  <section class="ib">
+    <div class="ib-head">
+      <h2 class="ib-title">Which channel actually works?</h2>
+      <p class="ib-sub">Share of overdue tasks that get resolved after each kind of outreach, against what that outreach costs a coordinator.</p>
+    </div>
+    <div class="bars" id="channelChart"></div>
+    <div class="ib-note" id="channelNote"></div>
+  </section>
+
+  <section class="ib">
+    <div class="ib-head">
+      <h2 class="ib-title">Which channel works for which barrier?</h2>
+      <p class="ib-sub">Resolution rate by barrier category and channel. Green clears most of the time, red mostly fails.</p>
+    </div>
+    <div id="matrixTable"></div>
+  </section>
+
+  <section class="ib">
+    <div class="ib-head">
+      <h2 class="ib-title">Did outreach change the outcome?</h2>
+      <p class="ib-sub">Patients who were contacted against patients who were not, matched on risk band.</p>
+    </div>
+    <div class="cmps" id="comparison"></div>
+  </section>
+
+  <div class="footer">&copy; 2026 NovaNav, Inc.</div>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel">
+  <div class="panel-head">
+    <button class="panel-close" id="panelClose">&times;</button>
+    <div class="panel-name" id="panelName">&nbsp;</div>
+    <div class="panel-meta" id="panelMeta"></div>
+    <div class="panel-badges" id="panelBadges"></div>
+  </div>
+  <div class="panel-body" id="panelBody"></div>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

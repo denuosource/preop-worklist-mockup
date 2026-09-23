@@ -1,0 +1,3010 @@
+{
+  "generated_at": "2026-09-23T19:21:52.280273+00:00",
+  "today": "2026-09-23T08:00:00+00:00",
+  "practices": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "name": "Dr Alvarez"
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "name": "Dr Beckett"
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "name": "Dr Okonkwo"
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "name": "Dr Lindstrom"
+    }
+  ],
+  "impact": {
+    "headline": [
+      {
+        "label": "Cancellation and no-show rate",
+        "value": "9.6%",
+        "compare": "13.8% for untouched patients at matched risk",
+        "delta": "\u22124.2 pts",
+        "dir": "good"
+      },
+      {
+        "label": "Critical tasks cleared before surgery",
+        "value": "71%",
+        "compare": "target is 90%",
+        "delta": "19 pts short",
+        "dir": "bad"
+      },
+      {
+        "label": "Median time to resolution",
+        "value": "6.4h",
+        "compare": "p90 is 22h, from outreach to task completion",
+        "delta": "within target",
+        "dir": "good"
+      }
+    ],
+    "channels": [
+      {
+        "name": "SMS / email reminder",
+        "rate": 41,
+        "effort": "Seconds",
+        "cost": "one click"
+      },
+      {
+        "name": "AI phone call",
+        "rate": 63,
+        "effort": "Seconds",
+        "cost": "no time on the call"
+      },
+      {
+        "name": "Coordinator call",
+        "rate": 82,
+        "effort": "5\u201315 min",
+        "cost": "a real slot in the day"
+      }
+    ],
+    "escalation_conversion": 46,
+    "matrix": {
+      "channels": [
+        "SMS / email",
+        "AI call",
+        "Coordinator call"
+      ],
+      "rows": [
+        {
+          "category": "Medication",
+          "values": [
+            38,
+            61,
+            84
+          ]
+        },
+        {
+          "category": "Financial",
+          "values": [
+            29,
+            48,
+            79
+          ]
+        },
+        {
+          "category": "Clinical prep",
+          "values": [
+            44,
+            66,
+            81
+          ]
+        },
+        {
+          "category": "Transport",
+          "values": [
+            58,
+            72,
+            77
+          ]
+        },
+        {
+          "category": "Administrative",
+          "values": [
+            67,
+            74,
+            80
+          ]
+        },
+        {
+          "category": "Education",
+          "values": [
+            71,
+            69,
+            70
+          ]
+        }
+      ]
+    },
+    "comparison": [
+      {
+        "label": "Task completion before surgery",
+        "touched": 78,
+        "untouched": 47,
+        "unit": "%",
+        "better": "high"
+      },
+      {
+        "label": "Cancelled or no-showed",
+        "touched": 9.6,
+        "untouched": 13.8,
+        "unit": "%",
+        "better": "low"
+      },
+      {
+        "label": "Risk score on the day",
+        "touched": 31,
+        "untouched": 58,
+        "unit": "",
+        "better": "low"
+      }
+    ]
+  },
+  "cohort_metrics": {
+    "critical_clearance_pct": 76,
+    "critical_cleared": 188,
+    "critical_total": 248
+  },
+  "patients": [
+    {
+      "patient_id": "pt-002",
+      "mrn": "MRN100274",
+      "name": "Beatrice Sterling",
+      "practice": "Dr Lindstrom",
+      "practice_id": "44444444-4444-4444-8444-444444444444",
+      "gender": "male",
+      "birth_year": 1960,
+      "procedure_type": "ACL Reconstruction",
+      "cpt_code": "29888",
+      "procedure_date": "2026-09-26T13:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 6,
+      "tasks_open_overdue": 14,
+      "critical_total": 7,
+      "critical_open": 6,
+      "open_tasks": [
+        {
+          "title": "Anaesthesia consult and airway assessment",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 306.5
+        },
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 306.5
+        },
+        {
+          "title": "Medical clearance from primary care",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 282.5
+        },
+        {
+          "title": "A1c check \u2014 surgery cancels above 8.0",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 282.5
+        },
+        {
+          "title": "Complete EKG and blood work",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 186.5
+        },
+        {
+          "title": "Stop rheumatoid medication / oral steroids",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 138.5
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 234.5
+        },
+        {
+          "title": "Update your emergency contact",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 210.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 138.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 114.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 66.5
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 66.5
+        },
+        {
+          "title": "Remove all jewellery and nail polish",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 18.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 474.5
+        }
+      ],
+      "risk_score": 89,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 91.4,
+        "critical_exposure": 85.7
+      },
+      "factor_basis": {
+        "overdue_load": "14 tasks past due \u2014 a heavier load than 91% of patients in this window",
+        "critical_exposure": "6 of 7 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Anaesthesia consult and airway assessment is overdue"
+    },
+    {
+      "patient_id": "pt-027",
+      "mrn": "MRN103699",
+      "name": "Diane Mendez",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1967,
+      "procedure_type": "Total Shoulder Arthroplasty",
+      "cpt_code": "23472",
+      "procedure_date": "2026-09-24T13:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 7,
+      "tasks_open_overdue": 12,
+      "critical_total": 8,
+      "critical_open": 6,
+      "open_tasks": [
+        {
+          "title": "Dental clearance",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 523.0
+        },
+        {
+          "title": "Cardiac clearance",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 427.0
+        },
+        {
+          "title": "Blood type and crossmatch",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 283.0
+        },
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 235.0
+        },
+        {
+          "title": "Stop anti-inflammatory medications (NSAIDs)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 187.0
+        },
+        {
+          "title": "Stop SGLT2 inhibitor (Jardiance / Farxiga)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 139.0
+        },
+        {
+          "title": "Arrange a caregiver for after surgery",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 283.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 235.0
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 91.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 355.0
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 187.0
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 43.0
+        }
+      ],
+      "risk_score": 89,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 97.1,
+        "critical_exposure": 75.0
+      },
+      "factor_basis": {
+        "overdue_load": "12 tasks past due \u2014 a heavier load than 97% of patients in this window",
+        "critical_exposure": "6 of 8 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Dental clearance is overdue"
+    },
+    {
+      "patient_id": "pt-001",
+      "mrn": "MRN100137",
+      "name": "Rosa Mercer",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "female",
+      "birth_year": 1950,
+      "procedure_type": "Total Hip Arthroplasty",
+      "cpt_code": "27130",
+      "procedure_date": "2026-09-27T07:00:00+00:00",
+      "days_to_procedure": 4,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 23,
+      "tasks_completed": 4,
+      "tasks_open_overdue": 16,
+      "critical_total": 10,
+      "critical_open": 7,
+      "open_tasks": [
+        {
+          "title": "Stop hormone therapy / oral contraceptive",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 457.0
+        },
+        {
+          "title": "A1c check \u2014 surgery cancels above 8.0",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 337.0
+        },
+        {
+          "title": "Medical clearance from primary care",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 313.0
+        },
+        {
+          "title": "Complete EKG and blood work",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 217.0
+        },
+        {
+          "title": "MRSA nasal swab screening",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 193.0
+        },
+        {
+          "title": "Stop fish oil and vitamin E supplements",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 97.0
+        },
+        {
+          "title": "Hold ACE inhibitor on the morning of surgery",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 25.0
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 265.0
+        },
+        {
+          "title": "Arrange a caregiver for after surgery",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 193.0
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 121.0
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 25.0
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 25.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 433.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 169.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 49.0
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 25.0
+        }
+      ],
+      "risk_score": 86,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 94.3,
+        "critical_exposure": 70.0
+      },
+      "factor_basis": {
+        "overdue_load": "16 tasks past due \u2014 a heavier load than 94% of patients in this window",
+        "critical_exposure": "7 of 10 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Stop hormone therapy / oral contraceptive is overdue"
+    },
+    {
+      "patient_id": "pt-024",
+      "mrn": "MRN103288",
+      "name": "Diane Reyes",
+      "practice": "Dr Lindstrom",
+      "practice_id": "44444444-4444-4444-8444-444444444444",
+      "gender": "male",
+      "birth_year": 1965,
+      "procedure_type": "Wrist Endoscopy \u2013 Carpal Tunnel Release",
+      "cpt_code": "29848",
+      "procedure_date": "2026-09-24T13:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 3,
+      "tasks_open_overdue": 13,
+      "critical_total": 7,
+      "critical_open": 4,
+      "open_tasks": [
+        {
+          "title": "Stop smoking \u2014 4 weeks before surgery",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 499.0
+        },
+        {
+          "title": "Anaesthesia consult and airway assessment",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 403.0
+        },
+        {
+          "title": "Medical clearance from primary care",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 379.0
+        },
+        {
+          "title": "Complete EKG and blood work",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 259.0
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 283.0
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 259.0
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 259.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 163.0
+        },
+        {
+          "title": "Bring your CPAP machine",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 91.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 547.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 331.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 91.0
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 67.0
+        }
+      ],
+      "risk_score": 85,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 100.0,
+        "critical_exposure": 57.1
+      },
+      "factor_basis": {
+        "overdue_load": "13 tasks past due \u2014 a heavier load than 100% of patients in this window",
+        "critical_exposure": "4 of 7 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Stop smoking \u2014 4 weeks before surgery is overdue"
+    },
+    {
+      "patient_id": "pt-032",
+      "mrn": "MRN104384",
+      "name": "Leonard Nolan",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1980,
+      "procedure_type": "Lumbar Laminectomy",
+      "cpt_code": "63047",
+      "procedure_date": "2026-09-24T07:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 6,
+      "tasks_open_overdue": 12,
+      "critical_total": 6,
+      "critical_open": 4,
+      "open_tasks": [
+        {
+          "title": "Dental clearance",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 457.0
+        },
+        {
+          "title": "Blood type and crossmatch",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 361.0
+        },
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 313.0
+        },
+        {
+          "title": "Stop GLP-1 medication (Ozempic / Wegovy)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 193.0
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 241.0
+        },
+        {
+          "title": "Arrange a caregiver for after surgery",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 193.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 169.0
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 73.0
+        },
+        {
+          "title": "Remove all jewellery and nail polish",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 49.0
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 1.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 337.0
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 73.0
+        }
+      ],
+      "risk_score": 81,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 88.6,
+        "critical_exposure": 66.7
+      },
+      "factor_basis": {
+        "overdue_load": "12 tasks past due \u2014 a heavier load than 89% of patients in this window",
+        "critical_exposure": "4 of 6 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Dental clearance is overdue"
+    },
+    {
+      "patient_id": "pt-003",
+      "mrn": "MRN100411",
+      "name": "Thomas Adeyemi",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1973,
+      "procedure_type": "Shoulder Arthroscopy \u2013 Cuff Repair",
+      "cpt_code": "29827",
+      "procedure_date": "2026-09-25T11:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 5,
+      "tasks_open_overdue": 11,
+      "critical_total": 7,
+      "critical_open": 4,
+      "open_tasks": [
+        {
+          "title": "Anaesthesia consult and airway assessment",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 356.5
+        },
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 284.5
+        },
+        {
+          "title": "Stop rheumatoid medication / oral steroids",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 236.5
+        },
+        {
+          "title": "Nothing to eat after midnight",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 44.5
+        },
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 500.5
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 284.5
+        },
+        {
+          "title": "Update your emergency contact",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 284.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 188.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 140.5
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 68.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 236.5
+        }
+      ],
+      "risk_score": 76,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 85.7,
+        "critical_exposure": 57.1
+      },
+      "factor_basis": {
+        "overdue_load": "11 tasks past due \u2014 a heavier load than 86% of patients in this window",
+        "critical_exposure": "4 of 7 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Anaesthesia consult and airway assessment is overdue"
+    },
+    {
+      "patient_id": "pt-033",
+      "mrn": "MRN104521",
+      "name": "David Zhao",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1966,
+      "procedure_type": "Wrist Endoscopy \u2013 Carpal Tunnel Release",
+      "cpt_code": "29848",
+      "procedure_date": "2026-09-24T09:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 4,
+      "tasks_open_overdue": 13,
+      "critical_total": 7,
+      "critical_open": 4,
+      "open_tasks": [
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 359.0
+        },
+        {
+          "title": "Complete EKG and blood work",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 167.0
+        },
+        {
+          "title": "Stop anti-inflammatory medications (NSAIDs)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 95.0
+        },
+        {
+          "title": "Hold ACE inhibitor on the morning of surgery",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 47.0
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 311.0
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 263.0
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 215.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 167.0
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 71.0
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 71.0
+        },
+        {
+          "title": "Bring your brace or sling to the hospital",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 71.0
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 23.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 191.0
+        }
+      ],
+      "risk_score": 72,
+      "risk_band": "red",
+      "factors": {
+        "overdue_load": 80.0,
+        "critical_exposure": 57.1
+      },
+      "factor_basis": {
+        "overdue_load": "13 tasks past due \u2014 a heavier load than 80% of patients in this window",
+        "critical_exposure": "4 of 7 critical tasks still open"
+      },
+      "recommend": "Escalate \u2014 coordinator call",
+      "risk_factor": "Complete pre-admission testing (PAT) is overdue"
+    },
+    {
+      "patient_id": "pt-005",
+      "mrn": "MRN100685",
+      "name": "Patricia Adeyemi",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1977,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-26T13:00:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 24,
+      "tasks_completed": 7,
+      "tasks_open_overdue": 12,
+      "critical_total": 7,
+      "critical_open": 3,
+      "open_tasks": [
+        {
+          "title": "Stop hormone therapy / oral contraceptive",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 427.0
+        },
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 235.0
+        },
+        {
+          "title": "Stop clopidogrel (Plavix)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 163.0
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 331.0
+        },
+        {
+          "title": "Update your emergency contact",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 187.0
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 187.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 67.0
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 43.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 403.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 235.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 43.0
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 43.0
+        }
+      ],
+      "risk_score": 69,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 82.9,
+        "critical_exposure": 42.9
+      },
+      "factor_basis": {
+        "overdue_load": "12 tasks past due \u2014 a heavier load than 83% of patients in this window",
+        "critical_exposure": "3 of 7 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Stop hormone therapy / oral contraceptive is overdue"
+    },
+    {
+      "patient_id": "pt-035",
+      "mrn": "MRN104795",
+      "name": "James Doyle",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1972,
+      "procedure_type": "Shoulder Arthroscopy \u2013 Cuff Repair",
+      "cpt_code": "29827",
+      "procedure_date": "2026-09-24T09:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 8,
+      "tasks_open_overdue": 9,
+      "critical_total": 5,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "MRSA nasal swab screening",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 310.5
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 358.5
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 334.5
+        },
+        {
+          "title": "Pay the surgical deposit",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 262.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 118.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 526.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 286.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 214.5
+        }
+      ],
+      "risk_score": 57,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 77.1,
+        "critical_exposure": 20.0
+      },
+      "factor_basis": {
+        "overdue_load": "9 tasks past due \u2014 a heavier load than 77% of patients in this window",
+        "critical_exposure": "1 of 5 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "MRSA nasal swab screening is overdue"
+    },
+    {
+      "patient_id": "pt-007",
+      "mrn": "MRN100959",
+      "name": "Beatrice Adeyemi",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1970,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-27T11:30:00+00:00",
+      "days_to_procedure": 4,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 24,
+      "tasks_completed": 8,
+      "tasks_open_overdue": 10,
+      "critical_total": 8,
+      "critical_open": 3,
+      "open_tasks": [
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 212.5
+        },
+        {
+          "title": "Stop rheumatoid medication / oral steroids",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 116.5
+        },
+        {
+          "title": "Adjust insulin dose for surgery day",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 44.5
+        },
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 428.5
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 188.5
+        },
+        {
+          "title": "Update your emergency contact",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 188.5
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 164.5
+        },
+        {
+          "title": "Bring your CPAP machine",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 44.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 188.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 68.5
+        }
+      ],
+      "risk_score": 56,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 65.7,
+        "critical_exposure": 37.5
+      },
+      "factor_basis": {
+        "overdue_load": "10 tasks past due \u2014 a heavier load than 66% of patients in this window",
+        "critical_exposure": "3 of 8 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Complete pre-admission testing (PAT) is overdue"
+    },
+    {
+      "patient_id": "pt-028",
+      "mrn": "MRN103836",
+      "name": "Robert Bennett",
+      "practice": "Dr Lindstrom",
+      "practice_id": "44444444-4444-4444-8444-444444444444",
+      "gender": "female",
+      "birth_year": 1984,
+      "procedure_type": "Total Shoulder Arthroplasty",
+      "cpt_code": "23472",
+      "procedure_date": "2026-09-24T09:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 22,
+      "tasks_completed": 12,
+      "tasks_open_overdue": 9,
+      "critical_total": 8,
+      "critical_open": 2,
+      "open_tasks": [
+        {
+          "title": "Stop rheumatoid medication / oral steroids",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 238.5
+        },
+        {
+          "title": "Stop anti-inflammatory medications (NSAIDs)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 142.5
+        },
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 478.5
+        },
+        {
+          "title": "Arrange a caregiver for after surgery",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Remove all jewellery and nail polish",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 46.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 550.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 262.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 46.5
+        }
+      ],
+      "risk_score": 55,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 71.4,
+        "critical_exposure": 25.0
+      },
+      "factor_basis": {
+        "overdue_load": "9 tasks past due \u2014 a heavier load than 71% of patients in this window",
+        "critical_exposure": "2 of 8 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Stop rheumatoid medication / oral steroids is overdue"
+    },
+    {
+      "patient_id": "pt-018",
+      "mrn": "MRN102466",
+      "name": "Samuel Marchetti",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "female",
+      "birth_year": 1973,
+      "procedure_type": "Wrist Endoscopy \u2013 Carpal Tunnel Release",
+      "cpt_code": "29848",
+      "procedure_date": "2026-09-25T07:00:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": true,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": false,
+      "tasks_total": 22,
+      "tasks_completed": 11,
+      "tasks_open_overdue": 10,
+      "critical_total": 7,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Stop hormone therapy / oral contraceptive",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 385.0
+        },
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 385.0
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 241.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 241.0
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 169.0
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 97.0
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 1.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 505.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 217.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 145.0
+        }
+      ],
+      "risk_score": 53,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 74.3,
+        "critical_exposure": 14.3
+      },
+      "factor_basis": {
+        "overdue_load": "10 tasks past due \u2014 a heavier load than 74% of patients in this window",
+        "critical_exposure": "1 of 7 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Stop hormone therapy / oral contraceptive is overdue"
+    },
+    {
+      "patient_id": "pt-020",
+      "mrn": "MRN102740",
+      "name": "Aisha Whitfield",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "female",
+      "birth_year": 1956,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-27T11:00:00+00:00",
+      "days_to_procedure": 4,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": false,
+      "tasks_total": 20,
+      "tasks_completed": 9,
+      "tasks_open_overdue": 7,
+      "critical_total": 5,
+      "critical_open": 2,
+      "open_tasks": [
+        {
+          "title": "A1c check \u2014 surgery cancels above 8.0",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 285.0
+        },
+        {
+          "title": "Complete EKG and blood work",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 141.0
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 309.0
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 285.0
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 21.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 333.0
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 261.0
+        }
+      ],
+      "risk_score": 53,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 60.0,
+        "critical_exposure": 40.0
+      },
+      "factor_basis": {
+        "overdue_load": "7 tasks past due \u2014 a heavier load than 60% of patients in this window",
+        "critical_exposure": "2 of 5 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "A1c check \u2014 surgery cancels above 8.0 is overdue"
+    },
+    {
+      "patient_id": "pt-034",
+      "mrn": "MRN104658",
+      "name": "Susan Whitfield",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "male",
+      "birth_year": 1970,
+      "procedure_type": "Total Knee Arthroplasty",
+      "cpt_code": "27447",
+      "procedure_date": "2026-09-24T09:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 21,
+      "tasks_completed": 11,
+      "tasks_open_overdue": 10,
+      "critical_total": 8,
+      "critical_open": 2,
+      "open_tasks": [
+        {
+          "title": "Stop SGLT2 inhibitor (Jardiance / Farxiga)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 263.0
+        },
+        {
+          "title": "Stop GLP-1 medication (Ozempic / Wegovy)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 215.0
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 191.0
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 167.0
+        },
+        {
+          "title": "Bring your CPAP machine",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 143.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 119.0
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 95.0
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 47.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 503.0
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 215.0
+        }
+      ],
+      "risk_score": 53,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 68.6,
+        "critical_exposure": 25.0
+      },
+      "factor_basis": {
+        "overdue_load": "10 tasks past due \u2014 a heavier load than 69% of patients in this window",
+        "critical_exposure": "2 of 8 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Stop SGLT2 inhibitor (Jardiance / Farxiga) is overdue"
+    },
+    {
+      "patient_id": "pt-008",
+      "mrn": "MRN101096",
+      "name": "Frank Kaur",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1960,
+      "procedure_type": "Lumbar Laminectomy",
+      "cpt_code": "63047",
+      "procedure_date": "2026-09-25T09:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": false,
+      "tasks_total": 19,
+      "tasks_completed": 8,
+      "tasks_open_overdue": 10,
+      "critical_total": 8,
+      "critical_open": 2,
+      "open_tasks": [
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Stop SGLT2 inhibitor (Jardiance / Farxiga)",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 286.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 190.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 46.5
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 46.5
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 22.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 310.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 118.5
+        }
+      ],
+      "risk_score": 50,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 62.9,
+        "critical_exposure": 25.0
+      },
+      "factor_basis": {
+        "overdue_load": "10 tasks past due \u2014 a heavier load than 63% of patients in this window",
+        "critical_exposure": "2 of 8 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Complete pre-admission testing (PAT) is overdue"
+    },
+    {
+      "patient_id": "pt-036",
+      "mrn": "MRN104932",
+      "name": "Susan Adeyemi",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1974,
+      "procedure_type": "Total Hip Arthroplasty",
+      "cpt_code": "27130",
+      "procedure_date": "2026-09-24T09:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": false,
+      "tasks_total": 16,
+      "tasks_completed": 3,
+      "tasks_open_overdue": 12,
+      "critical_total": 3,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Nothing to eat after midnight",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 46.5
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 310.5
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 238.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 142.5
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 142.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 118.5
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 46.5
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 22.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 550.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 118.5
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 70.5
+        }
+      ],
+      "risk_score": 49,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 57.1,
+        "critical_exposure": 33.3
+      },
+      "factor_basis": {
+        "overdue_load": "12 tasks past due \u2014 a heavier load than 57% of patients in this window",
+        "critical_exposure": "1 of 3 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Nothing to eat after midnight is overdue"
+    },
+    {
+      "patient_id": "pt-030",
+      "mrn": "MRN104110",
+      "name": "James Zhao",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1982,
+      "procedure_type": "ACL Reconstruction",
+      "cpt_code": "29888",
+      "procedure_date": "2026-09-24T07:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 26,
+      "tasks_completed": 17,
+      "tasks_open_overdue": 9,
+      "critical_total": 11,
+      "critical_open": 2,
+      "open_tasks": [
+        {
+          "title": "Stop rheumatoid medication / oral steroids",
+          "tier": "Critical",
+          "category": "Medication",
+          "hours_overdue": 144.5
+        },
+        {
+          "title": "Clear fluids only, until 2 hours before",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 0.5
+        },
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 384.5
+        },
+        {
+          "title": "Update your emergency contact",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 360.5
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 144.5
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 72.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 432.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 168.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 72.5
+        }
+      ],
+      "risk_score": 42,
+      "risk_band": "amber",
+      "factors": {
+        "overdue_load": 54.3,
+        "critical_exposure": 18.2
+      },
+      "factor_basis": {
+        "overdue_load": "9 tasks past due \u2014 a heavier load than 54% of patients in this window",
+        "critical_exposure": "2 of 11 critical tasks still open"
+      },
+      "recommend": "Outreach recommended",
+      "risk_factor": "Stop rheumatoid medication / oral steroids is overdue"
+    },
+    {
+      "patient_id": "pt-012",
+      "mrn": "MRN101644",
+      "name": "Leonard Ferreira",
+      "practice": "Dr Lindstrom",
+      "practice_id": "44444444-4444-4444-8444-444444444444",
+      "gender": "male",
+      "birth_year": 1961,
+      "procedure_type": "Wrist Endoscopy \u2013 Carpal Tunnel Release",
+      "cpt_code": "29848",
+      "procedure_date": "2026-09-26T13:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 14,
+      "tasks_completed": 10,
+      "tasks_open_overdue": 4,
+      "critical_total": 7,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Anaesthesia consult and airway assessment",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 306.5
+        },
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 330.5
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 210.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 90.5
+        }
+      ],
+      "risk_score": 38,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 51.4,
+        "critical_exposure": 14.3
+      },
+      "factor_basis": {
+        "overdue_load": "4 tasks past due \u2014 a heavier load than 51% of patients in this window",
+        "critical_exposure": "1 of 7 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Anaesthesia consult and airway assessment is overdue"
+    },
+    {
+      "patient_id": "pt-014",
+      "mrn": "MRN101918",
+      "name": "Miriam Ibrahim",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "male",
+      "birth_year": 1958,
+      "procedure_type": "Total Knee Arthroplasty",
+      "cpt_code": "27447",
+      "procedure_date": "2026-09-25T11:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 15,
+      "tasks_completed": 7,
+      "tasks_open_overdue": 5,
+      "critical_total": 5,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Medical clearance from primary care",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 260.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 164.5
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 44.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 332.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 68.5
+        }
+      ],
+      "risk_score": 33,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 40.0,
+        "critical_exposure": 20.0
+      },
+      "factor_basis": {
+        "overdue_load": "5 tasks past due \u2014 a heavier load than 40% of patients in this window",
+        "critical_exposure": "1 of 5 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Medical clearance from primary care is overdue"
+    },
+    {
+      "patient_id": "pt-031",
+      "mrn": "MRN104247",
+      "name": "Patricia Mercer",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1960,
+      "procedure_type": "ACL Reconstruction",
+      "cpt_code": "29888",
+      "procedure_date": "2026-09-24T09:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 17,
+      "tasks_completed": 7,
+      "tasks_open_overdue": 10,
+      "critical_total": 3,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 262.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 238.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 118.5
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 94.5
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 70.5
+        },
+        {
+          "title": "Confirm your arrival time",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 22.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 478.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 262.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 166.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 118.5
+        }
+      ],
+      "risk_score": 32,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 48.6,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "10 tasks past due \u2014 a heavier load than 49% of patients in this window",
+        "critical_exposure": "0 of 3 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Financial clearance is overdue"
+    },
+    {
+      "patient_id": "pt-026",
+      "mrn": "MRN103562",
+      "name": "Margaret Nakamura",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "male",
+      "birth_year": 1953,
+      "procedure_type": "Total Hip Arthroplasty",
+      "cpt_code": "27130",
+      "procedure_date": "2026-09-24T07:00:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 25,
+      "tasks_completed": 20,
+      "tasks_open_overdue": 5,
+      "critical_total": 10,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 361.0
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 337.0
+        },
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 217.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 505.0
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 121.0
+        }
+      ],
+      "risk_score": 30,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 45.7,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "5 tasks past due \u2014 a heavier load than 46% of patients in this window",
+        "critical_exposure": "0 of 10 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Complete the pre-admission questionnaire is overdue"
+    },
+    {
+      "patient_id": "pt-013",
+      "mrn": "MRN101781",
+      "name": "Leonard Sandoval",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "female",
+      "birth_year": 1950,
+      "procedure_type": "Wrist Endoscopy \u2013 Carpal Tunnel Release",
+      "cpt_code": "29848",
+      "procedure_date": "2026-09-26T09:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 12,
+      "tasks_open_overdue": 5,
+      "critical_total": 7,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 430.5
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 238.5
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 94.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 286.5
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 166.5
+        }
+      ],
+      "risk_score": 28,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 42.9,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "5 tasks past due \u2014 a heavier load than 43% of patients in this window",
+        "critical_exposure": "0 of 7 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Insurance verification is overdue"
+    },
+    {
+      "patient_id": "pt-016",
+      "mrn": "MRN102192",
+      "name": "Joan Bennett",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1978,
+      "procedure_type": "Total Shoulder Arthroplasty",
+      "cpt_code": "23472",
+      "procedure_date": "2026-09-25T09:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 21,
+      "tasks_completed": 18,
+      "tasks_open_overdue": 3,
+      "critical_total": 9,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Anaesthesia consult and airway assessment",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 382.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 214.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 22.5
+        }
+      ],
+      "risk_score": 28,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 37.1,
+        "critical_exposure": 11.1
+      },
+      "factor_basis": {
+        "overdue_load": "3 tasks past due \u2014 a heavier load than 37% of patients in this window",
+        "critical_exposure": "1 of 9 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Anaesthesia consult and airway assessment is overdue"
+    },
+    {
+      "patient_id": "pt-015",
+      "mrn": "MRN102055",
+      "name": "Hugh Marchetti",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1960,
+      "procedure_type": "Shoulder Arthroscopy \u2013 Cuff Repair",
+      "cpt_code": "29827",
+      "procedure_date": "2026-09-26T11:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 18,
+      "tasks_open_overdue": 2,
+      "critical_total": 9,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Complete pre-admission testing (PAT)",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 284.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 452.5
+        }
+      ],
+      "risk_score": 26,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 34.3,
+        "critical_exposure": 11.1
+      },
+      "factor_basis": {
+        "overdue_load": "2 tasks past due \u2014 a heavier load than 34% of patients in this window",
+        "critical_exposure": "1 of 9 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Complete pre-admission testing (PAT) is overdue"
+    },
+    {
+      "patient_id": "pt-022",
+      "mrn": "MRN103014",
+      "name": "Diane Doyle",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1952,
+      "procedure_type": "Total Hip Arthroplasty",
+      "cpt_code": "27130",
+      "procedure_date": "2026-09-26T09:00:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 15,
+      "tasks_completed": 10,
+      "tasks_open_overdue": 3,
+      "critical_total": 7,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "MRSA nasal swab screening",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 167.0
+        },
+        {
+          "title": "Financial clearance",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 215.0
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 143.0
+        }
+      ],
+      "risk_score": 25,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 31.4,
+        "critical_exposure": 14.3
+      },
+      "factor_basis": {
+        "overdue_load": "3 tasks past due \u2014 a heavier load than 31% of patients in this window",
+        "critical_exposure": "1 of 7 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "MRSA nasal swab screening is overdue"
+    },
+    {
+      "patient_id": "pt-019",
+      "mrn": "MRN102603",
+      "name": "Nora Shaw",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "male",
+      "birth_year": 1963,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-27T07:00:00+00:00",
+      "days_to_procedure": 4,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 15,
+      "tasks_open_overdue": 5,
+      "critical_total": 10,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 313.0
+        },
+        {
+          "title": "Sign the surgical consent form",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 193.0
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 1.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 337.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 49.0
+        }
+      ],
+      "risk_score": 19,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 28.6,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "5 tasks past due \u2014 a heavier load than 29% of patients in this window",
+        "critical_exposure": "0 of 10 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Complete the pre-admission questionnaire is overdue"
+    },
+    {
+      "patient_id": "pt-025",
+      "mrn": "MRN103425",
+      "name": "Hugh Rosetti",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1979,
+      "procedure_type": "Shoulder Arthroscopy \u2013 Cuff Repair",
+      "cpt_code": "29827",
+      "procedure_date": "2026-09-24T13:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 12,
+      "tasks_completed": 7,
+      "tasks_open_overdue": 4,
+      "critical_total": 3,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Complete the pre-admission questionnaire",
+          "tier": "Important",
+          "category": "Administrative",
+          "hours_overdue": 354.5
+        },
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 138.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 66.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 42.5
+        }
+      ],
+      "risk_score": 17,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 25.7,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "4 tasks past due \u2014 a heavier load than 26% of patients in this window",
+        "critical_exposure": "0 of 3 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Complete the pre-admission questionnaire is overdue"
+    },
+    {
+      "patient_id": "pt-004",
+      "mrn": "MRN100548",
+      "name": "Margaret Whitfield",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "male",
+      "birth_year": 1951,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-25T07:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": true,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 13,
+      "tasks_completed": 5,
+      "tasks_open_overdue": 7,
+      "critical_total": 3,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 168.5
+        },
+        {
+          "title": "Pick up Hibiclens from the pharmacy",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 144.5
+        },
+        {
+          "title": "Pick up post-operative medications",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 48.5
+        },
+        {
+          "title": "Begin Hibiclens wash the night before",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 0.5
+        },
+        {
+          "title": "Do not shave the surgical site",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 0.5
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 384.5
+        },
+        {
+          "title": "Read: managing pain after surgery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 0.5
+        }
+      ],
+      "risk_score": 15,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 22.9,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "7 tasks past due \u2014 a heavier load than 23% of patients in this window",
+        "critical_exposure": "0 of 3 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Arrange your ride home is overdue"
+    },
+    {
+      "patient_id": "pt-009",
+      "mrn": "MRN101233",
+      "name": "Sylvia Reyes",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "female",
+      "birth_year": 1962,
+      "procedure_type": "Total Hip Arthroplasty",
+      "cpt_code": "27130",
+      "procedure_date": "2026-09-26T13:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 18,
+      "tasks_open_overdue": 2,
+      "critical_total": 8,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Insurance verification",
+          "tier": "Important",
+          "category": "Financial",
+          "hours_overdue": 402.5
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 18.5
+        }
+      ],
+      "risk_score": 13,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 20.0,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "2 tasks past due \u2014 a heavier load than 20% of patients in this window",
+        "critical_exposure": "0 of 8 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Insurance verification is overdue"
+    },
+    {
+      "patient_id": "pt-017",
+      "mrn": "MRN102329",
+      "name": "Joan Delgado",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1974,
+      "procedure_type": "Lumbar Laminectomy",
+      "cpt_code": "63047",
+      "procedure_date": "2026-09-25T09:30:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": false,
+      "email_opt_in": true,
+      "tasks_total": 19,
+      "tasks_completed": 17,
+      "tasks_open_overdue": 2,
+      "critical_total": 4,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 502.5
+        },
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 358.5
+        }
+      ],
+      "risk_score": 11,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 17.1,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "2 tasks past due \u2014 a heavier load than 17% of patients in this window",
+        "critical_exposure": "0 of 4 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Read the welcome article is overdue"
+    },
+    {
+      "patient_id": "pt-023",
+      "mrn": "MRN103151",
+      "name": "Michael Sterling",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1975,
+      "procedure_type": "Total Shoulder Arthroplasty",
+      "cpt_code": "23472",
+      "procedure_date": "2026-09-24T13:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 17,
+      "tasks_completed": 16,
+      "tasks_open_overdue": 1,
+      "critical_total": 5,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Upload recent weight-bearing X-ray",
+          "tier": "Important",
+          "category": "Clinical prep",
+          "hours_overdue": 234.5
+        }
+      ],
+      "risk_score": 9,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 14.3,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "1 tasks past due \u2014 a heavier load than 14% of patients in this window",
+        "critical_exposure": "0 of 5 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Upload recent weight-bearing X-ray is overdue"
+    },
+    {
+      "patient_id": "pt-006",
+      "mrn": "MRN100822",
+      "name": "Joan Hollis",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "female",
+      "birth_year": 1964,
+      "procedure_type": "Shoulder Arthroscopy \u2013 Cuff Repair",
+      "cpt_code": "29827",
+      "procedure_date": "2026-09-25T13:00:00+00:00",
+      "days_to_procedure": 2,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 13,
+      "tasks_completed": 11,
+      "tasks_open_overdue": 2,
+      "critical_total": 3,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 187.0
+        },
+        {
+          "title": "Read: what to expect on surgery day",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 139.0
+        }
+      ],
+      "risk_score": 7,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 11.4,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "2 tasks past due \u2014 a heavier load than 11% of patients in this window",
+        "critical_exposure": "0 of 3 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Arrange your ride home is overdue"
+    },
+    {
+      "patient_id": "pt-029",
+      "mrn": "MRN103973",
+      "name": "Sylvia Kaur",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1971,
+      "procedure_type": "Lumbar Laminectomy",
+      "cpt_code": "63047",
+      "procedure_date": "2026-09-24T11:30:00+00:00",
+      "days_to_procedure": 1,
+      "tab": "D1",
+      "flagged": false,
+      "confirmed": false,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 24,
+      "tasks_completed": 23,
+      "tasks_open_overdue": 1,
+      "critical_total": 10,
+      "critical_open": 1,
+      "open_tasks": [
+        {
+          "title": "Clear fluids only, until 2 hours before",
+          "tier": "Critical",
+          "category": "Clinical prep",
+          "hours_overdue": 44.5
+        }
+      ],
+      "risk_score": 7,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 5.7,
+        "critical_exposure": 10.0
+      },
+      "factor_basis": {
+        "overdue_load": "1 tasks past due \u2014 a heavier load than 6% of patients in this window",
+        "critical_exposure": "1 of 10 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Clear fluids only, until 2 hours before is overdue"
+    },
+    {
+      "patient_id": "pt-021",
+      "mrn": "MRN102877",
+      "name": "Patricia Ibrahim",
+      "practice": "Dr Beckett",
+      "practice_id": "22222222-2222-4222-8222-222222222222",
+      "gender": "female",
+      "birth_year": 1947,
+      "procedure_type": "Total Knee Arthroplasty",
+      "cpt_code": "27447",
+      "procedure_date": "2026-09-26T11:00:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 22,
+      "tasks_completed": 19,
+      "tasks_open_overdue": 3,
+      "critical_total": 10,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Arrange your ride home",
+          "tier": "Important",
+          "category": "Transport",
+          "hours_overdue": 45.0
+        },
+        {
+          "title": "Read the welcome article",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 453.0
+        },
+        {
+          "title": "Prepare your home for recovery",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 69.0
+        }
+      ],
+      "risk_score": 6,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 8.6,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "3 tasks past due \u2014 a heavier load than 9% of patients in this window",
+        "critical_exposure": "0 of 10 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Arrange your ride home is overdue"
+    },
+    {
+      "patient_id": "pt-011",
+      "mrn": "MRN101507",
+      "name": "Patricia Sterling",
+      "practice": "Dr Okonkwo",
+      "practice_id": "33333333-3333-4333-8333-333333333333",
+      "gender": "male",
+      "birth_year": 1969,
+      "procedure_type": "Lumbar Laminectomy",
+      "cpt_code": "63047",
+      "procedure_date": "2026-09-26T11:00:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 20,
+      "tasks_completed": 19,
+      "tasks_open_overdue": 1,
+      "critical_total": 7,
+      "critical_open": 0,
+      "open_tasks": [
+        {
+          "title": "Watch the surgery preparation video",
+          "tier": "Routine",
+          "category": "Education",
+          "hours_overdue": 213.0
+        }
+      ],
+      "risk_score": 2,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 2.9,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "1 tasks past due \u2014 a heavier load than 3% of patients in this window",
+        "critical_exposure": "0 of 7 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "Watch the surgery preparation video is overdue"
+    },
+    {
+      "patient_id": "pt-010",
+      "mrn": "MRN101370",
+      "name": "Ruth Larkin",
+      "practice": "Dr Alvarez",
+      "practice_id": "11111111-1111-4111-8111-111111111111",
+      "gender": "male",
+      "birth_year": 1951,
+      "procedure_type": "Ankle Arthroscopy",
+      "cpt_code": "29898",
+      "procedure_date": "2026-09-26T07:30:00+00:00",
+      "days_to_procedure": 3,
+      "tab": "D3",
+      "flagged": false,
+      "confirmed": true,
+      "text_opt_in": true,
+      "email_opt_in": true,
+      "tasks_total": 18,
+      "tasks_completed": 16,
+      "tasks_open_overdue": 0,
+      "critical_total": 6,
+      "critical_open": 0,
+      "open_tasks": [],
+      "risk_score": 0,
+      "risk_band": "green",
+      "factors": {
+        "overdue_load": 0.0,
+        "critical_exposure": 0.0
+      },
+      "factor_basis": {
+        "overdue_load": "0 tasks past due \u2014 a heavier load than 0% of patients in this window",
+        "critical_exposure": "0 of 6 critical tasks still open"
+      },
+      "recommend": "Monitor",
+      "risk_factor": "No overdue tasks"
+    }
+  ]
+}
