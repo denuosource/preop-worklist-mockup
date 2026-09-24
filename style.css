@@ -914,3 +914,12 @@ tbody td { height: 62px; }
 .crit-note { margin-top: 6px; }
 .act-row { flex-direction: column; gap: 5px; }
 .act { width: 100%; text-align: center; }
+
+/* ── Dropdown must open inward ───────────────────────────────────────── */
+/* The surgeon filter sits at the right edge of the controls row, so a panel
+   anchored to its left edge ran past the viewport and forced the whole page
+   to scroll sideways. Anchor it to the right edge so it opens leftward. */
+.ms-panel { left: auto; right: 0; }
+
+/* Nothing in this layout should ever scroll horizontally. */
+html, body { max-width: 100%; overflow-x: hidden; }
