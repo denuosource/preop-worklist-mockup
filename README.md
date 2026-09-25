@@ -34,9 +34,11 @@ Every task is tagged twice, which is what makes the ranking work:
 **Patient 360** — a slide-over per patient: score breakdown, open barriers, and
 the overdue task list filterable by criticality and by barrier category.
 
-**Measured Impact** — resolution rate by channel, and a channel-by-barrier
-matrix. Medication and financial blocks need a phone call (29–38% clear by
-text); transport, admin and education clear on the cheapest channel.
+**Measured Impact** *(temporarily hidden from the nav — page and data are
+still in the build, just not linked to right now)* — resolution rate by
+channel, and a channel-by-barrier matrix. Medication and financial blocks
+need a phone call (29–38% clear by text); transport, admin and education
+clear on the cheapest channel.
 
 **Done / watchlist** — row actions recording that a coordinator acted. They
 deliberately do not move the task counts, which track the underlying data.
